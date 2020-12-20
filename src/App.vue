@@ -29,13 +29,14 @@
     data(){
       return{
         namearr:[],
-        //录入框内容
+        // 录入框内容
         inputName:"",
         //右侧展示内容
         showright:"",
         //随机点名
         si:null,
-        prompt:"请输入姓名",
+        prompt:"请先输入姓名",
+        
       }
     },
 
@@ -65,7 +66,7 @@
         }
         
       },
-      //停止按钮
+      // 停止按钮
       randomend(){
         clearInterval(this.si);
       }
